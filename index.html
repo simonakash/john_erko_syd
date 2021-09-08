@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Company Name -->
-		<title></title>
+		<title>john_erko_syd</title>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 			body{
@@ -37,26 +37,8 @@
 				justify-content: space-between;
 			}
 		</style>
-		<script>
-		function myFunction() {
-			if (elem.requestFullscreen) {
-				elem.requestFullscreen();
-			} else if (elem.webkitRequestFullscreen) { /* Safari */
-				elem.webkitRequestFullscreen();
-			} else if (elem.msRequestFullscreen) { /* IE11 */
-				elem.msRequestFullscreen();
-			}
-			}
-		</script>
-		<script type="text/javascript">  
-			function myFunction(){
-				var win = window.open("", "full", "dependent=yes, fullscreen=yes");
-				win.location = window.location.href;
-				window.opener = null;
-			} 
-    	</script>
 	</head>
-	<body onload="myFunction()">
+	<body id="appin" onload="openFullscreen();">
 		<main>
 			<section>
 				<!--001-->
@@ -144,8 +126,33 @@
 				</div>
 			</section>
 		</main>
+
+
+		<style>
+		*:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
+			background-color: rgba(255,255,255,0)!important;
+			padding: 20px;
+		}
+
+		::backdrop
+		{
+			background-color: white;
+			
+		}
+		</style>
+		<script>
+		var elem = document.getElementById("appin");
+		function openFullscreen() {
+		if (elem.requestFullscreen) {
+			elem.requestFullscreen();
+		} else if (elem.webkitRequestFullscreen) { /* Safari */
+			elem.webkitRequestFullscreen();
+		} else if (elem.msRequestFullscreen) { /* IE11 */
+			elem.msRequestFullscreen();
+		}
+		}
+		</script>
 	</body>
-	
 </html>
 
 
