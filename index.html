@@ -38,7 +38,7 @@
 			}
 		</style>
 	</head>
-	<body id="appin" onload="openFullscreen();">
+	<body>
 		<main>
 			<section>
 				<!--001-->
@@ -121,37 +121,36 @@
 				<!--004-->
 				<div class="px-2"> 
 					<div style="padding:25px; background: #e7edfa; font-size: 16px; font-weight: 500;">
-						<p style="margin: 0;">Help with contact tracing by choosing to check out. for more information</p>
+						<p style="margin: 0;">Help with contact tracing by choosing to check out. for more information. Lorem ipsum dolor sit amet consectetur</p>
 					</div>
+				</div>
+				<!--005-->
+				<div class="px-2" style="background-color: #f1f4f6; padding-bottom: 8px; position: fixed; left: 0; bottom: 0; right: 0; ">
+					<!---->
+					<p style="margin: 0; padding: 20px 0px; font-size: 18px; font-weight: 700;color: #383c45;">How was your check-in<br> experience?</p>
+					<!---->
+					<div style="display: flex; align-items: center;">
+						<!---->
+						<div style="display: flex; align-items: center; padding: 0px 10px; border-radius: 4px; background: white; box-shadow: 0 7px 7px 0 rgb(0 0 0 / 10%); height: 45px; width: 50%; margin-right: 10px;">
+							<svg xmlns="http://www.w3.org/2000/svg" style="width: 40px; color:#898d94; margin-right:40px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+							</svg>
+							<!---->
+							<p style="margin: 0; font-size: 16px; font-weight: 700;color: #383c45;">Good</p>
+						</div>
+						<!---->
+						<div style="display: flex; align-items: center; padding: 0px 10px; border-radius: 4px; background: white; box-shadow: 0 7px 7px 0 rgb(0 0 0 / 10%); height: 45px; width: 50%;">
+							<svg xmlns="http://www.w3.org/2000/svg" style="width: 40px; color:#898d94; margin-right:10px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+							</svg>
+							<!---->
+							<p style="margin: 0; font-size: 16px; font-weight: 700;color: #383c45;">Not so good</p>
+						</div>
+					</div>
+					
 				</div>
 			</section>
 		</main>
-
-
-		<style>
-		*:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
-			background-color: rgba(255,255,255,0)!important;
-			padding: 20px;
-		}
-
-		::backdrop
-		{
-			background-color: white;
-			
-		}
-		</style>
-		<script>
-		var elem = document.getElementById("appin");
-		function openFullscreen() {
-		if (elem.requestFullscreen) {
-			elem.requestFullscreen();
-		} else if (elem.webkitRequestFullscreen) { /* Safari */
-			elem.webkitRequestFullscreen();
-		} else if (elem.msRequestFullscreen) { /* IE11 */
-			elem.msRequestFullscreen();
-		}
-		}
-		</script>
 	</body>
 </html>
 
